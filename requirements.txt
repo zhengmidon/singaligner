@@ -1,0 +1,9 @@
+matplotlib
+numpy
+inflect
+librosa
+scipy
+Unidecode
+pillow
+six
+tensorboard
