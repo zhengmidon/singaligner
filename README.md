@@ -12,7 +12,7 @@ Once the data is prepared, you should just do:
 CUDA_VISIBLE_DEVICES=0 python train.py --output_directory experiments/0/ --log_directory tensorboard_logs
 ```
 ## Citation
-```
+```sh
 @inproceedings{zheng2023compact,
   title={A Compact Phoneme-To-Audio Aligner for Singing Voice},
   author={Zheng, Meizhen and Bai, Peng and Shi, Xiaodong},
