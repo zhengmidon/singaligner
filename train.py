@@ -13,8 +13,8 @@ import torch.distributed as dist
 from torch.utils.data.distributed import DistributedSampler
 from torch.utils.data import DataLoader as DataLoader
 
-# from model import ATTNAligner
-from model_comp import ATTNAligner
+from model import ATTNAligner
+# from model_comp import ATTNAligner
 # from model_conformer import ATTNAligner
 # from model_conv import ATTNAligner
 # from model_linear import ATTNAligner
