@@ -6,9 +6,10 @@ The available datasets in our experiments are: [Opencpop](https://wenet.org.cn/o
 Once the data is prepared, you should just do:
 1. Create a virtual environment.
 2. Define the dataloder and the collate function in utils/data_utils.py. You can inherit the existing classes.
-3. Prepare a file named phone_set.json which contains the phone set of your dataset and put it at root of data_dir.
-4. Change the data_dir to your data path in hparams.py
-5. Run this command to start training: 
+3. Import your dataloader to train.py and change trainset, valset and collate_fn in prepare_dataloaders function.
+4. Prepare a file named phone_set.json which contains the phone set of your dataset and put it at root of data_dir.
+5. Change the data_dir to your data path in hparams.py
+6. Run this command to start training: 
 ```sh
 CUDA_VISIBLE_DEVICES=0 python train.py --output_directory experiments/0/ --log_directory tensorboard_logs
 ```
