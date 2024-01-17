@@ -11,7 +11,12 @@ Once the data is prepared, you should just do:
 5. Change the data_dir to your data path in hparams.py
 6. Run this command to start training: 
 ```sh
-CUDA_VISIBLE_DEVICES=0 python train.py --output_directory experiments/0/ --log_directory tensorboard_logs
+CUDA_VISIBLE_DEVICES=0 python train.py --output_directory experiments/exp_name/ --log_directory tensorboard_logs
+```
+7. Run this command to start inferring:
+```sh
+CUDA_VISIBLE_DEVICES=0 python infer_prob.py --checkpoint_path experiments/exp_name/checkpoint_name \
+--output_dir experiments/exp_name/
 ```
 ## Citation
 ```sh
